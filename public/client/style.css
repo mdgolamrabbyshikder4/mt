@@ -1,0 +1,23 @@
+/*slider css area start*/
+#carouselExampleIndicators,.carousel-item{
+	height: 300px;
+}
+.carousel-item img{
+	height: 100%;
+}
+/*slider css area end*/
+/*nav css area start*/
+nav a, nav button{
+	color:#ffff !important;
+}
+nav a {
+    color: white !important;
+}
+/*nav css area end*/
+
+/*body css area staet*/
+.contante{
+margin:0;
+padding:20px;
+}
+/*body css area end*/

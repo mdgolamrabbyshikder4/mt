@@ -1,0 +1,241 @@
+// //$('#msg').val(response.data);
+            // $.each(response, function(index, data) {
+                
+            //      if (data.img_stutas == 0) {
+            //         var userId = $('#user_id').val();
+            //         var reciv_id_find =data.reciv_id;
+            //         var sendr_id_find =data.sender_id;
+            //     if (sendr_id_find === userId){
+            //        $("#msg").val(data.datetime); 
+            //     $('#message_pass').append(`
+            //         <div class="d-flex justify-content-start mb-4">
+
+            //             <div style="width: 100%;"  class="msg_cotainer_send">
+            //                 ${data.discription}
+            //                 <span class="msg_time_send"> ${data.datetime}</span>
+            //             </div>
+            //             <div class="img_cont_msg">
+            //                 <img src="{{ url('public/images/') }}/${$data.sender_img}" class="rounded-circle user_img_msg">
+            //             </div>
+            //         </div>
+            //     `);
+            // } else { // corrected to 'else if'
+            //     $('#message_pass').append(`
+            //         <div class="d-flex justify-content-start mb-4">
+            //             <div class="img_cont_msg">
+            //                 <img src="{{ url('public/images/') }}/${$data.reciver_user_img}" class="rounded-circle user_img_msg">
+            //             </div>
+            //             <div style="width: 100%;"  class="msg_cotainer">
+            //                 ${data.discription}
+            //                 <span class="msg_time"> ${data.datetime}</span>
+            //             </div>
+            //         </div>
+            //     `);
+            // }        
+                 
+            //     } else {
+
+            //          if (sendr_id_find === userId){
+
+            //     $('#message_pass').append(`
+            //     <div class="d-flex justify-content-start mb-4">
+            //         <div class="img_cont_msg">
+            //             <img src="{{ url('public/images/') }}/${$data.sender_img}" class="rounded-circle user_img_msg">
+            //         </div>
+            //         <div class="row">
+            //             <div class="col-sm-12">
+            //                     <div style="width: 100%;" class="msg_cotainer">
+            //                          ${data.discription}
+            //                     </div>
+            //                     </div>
+            //             <div class="offset-sm-3 col-sm-6 mt-3">                              
+            //                 <img class="img-fluid" src="{{url('/public/images')}}/${data.img}" alt="img">
+            //                 <span class="msg_time text-center mt-3"> ${data.datetime}</span>
+            //             </div>
+            //         </div>
+            //     </div>
+            // `);
+
+            // } else { // corrected to 'else if'
+            //     $('#message_pass').append(`
+            //         <div class="d-flex justify-content-start mb-4">
+            //             <div class="img_cont_msg">
+            //                 <img src="{{ url('public/images/') }}/${$data.reciver_user_img}" class="rounded-circle user_img_msg">
+            //             </div>
+            //             <div class="row">
+            //             <div class="col-sm-12">
+            //             <div class="col-sm-12">
+                            
+            //                     <div style="width: 100%;" class="msg_cotainer">
+            //                         ok ${data.description}
+            //                     </div>
+                            
+            //             </div>
+            //         </div>
+            //             <div class="offset-sm-3 col-sm-6 mt-3">                              
+            //             <img class="img-fluid" src="{{url('/public/images')}}/${data.img}" alt="img">
+            //             <span class="msg_time text-center mt-3"> ${data.datetime}</span>
+            //             </div>
+            //             </div>
+            //             </div>
+            //     `);
+            // }        
+
+            //     }
+            //     $('#message_pass').scrollTop($('#message_pass')[0].scrollHeight);
+            // });
+
+
+                           <div class="d-flex justify-content-start mb-4">
+                                <div class="img_cont_msg">
+                                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
+                                </div>
+                                <div class="msg_cotainer">
+                                    Hi, how are you samim?
+                                    <span class="msg_time">8:40 AM, Today</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end mb-4">
+                                <div class="row">
+                                <div class="col-sm-12">
+                                <div class="msg_cotainer_send">
+                                    Hi Khalid i am good tnx how about you?
+                                <span class="msg_time_send">8:55 AM, Today</span>
+                                </div>
+                                </div>
+                                <div class="offset-sm-3 col-sm-6 mt-3">                              
+                                <img class="img-fluid" src="{{url('/public/images')}}/53c0aa83b499e3d4e7c77f4dfa9e583c.jpg" alt="img">
+                                </div>
+                                </div>
+                                <div class="img_cont_msg">
+                            <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-start mb-4">
+                                <div class="img_cont_msg">
+                                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" class="rounded-circle user_img_msg">
+                                </div>
+                                <div style="width: 100%;" id="msg_cont" class="msg_cotainer">
+                                    so
+                                    <span class="msg_time">9:00 AM, Today</span>
+
+                                </div>
+                            </div> 
+
+                            // function fetchData() {
+//     $('#message_pass').empty(); // Clear the message container
+//     var contact_id = $('#contact_id').val(); // Get the contact ID value
+    
+//     // Make the AJAX request
+//     // $.ajax({
+//     //     url: "{{url('/show/message')}}" + "/" + contact_id,
+//     //     type: 'GET',
+//     //     success: function(response) {
+//     //         $('#message_pass').html(response); // Update the message container with the response
+//     //     },
+//     //     error: function(xhr, status, error) {
+//     //         console.error("Error: " + error); // Log the error to the console
+//     //         $('#message_pass').html("Error: " + xhr.status + " " + xhr.statusText); // Display the error message
+//     //     }
+//     // });
+//      $('#message_pass').load("{{ url('/show/message/1') }}";
+// }
+
+
+//     function fetchData() {
+//         $('#message_pass').empty();
+//         var contact_id = $('#contact_id').val();
+//     $.ajax({
+//         url: "{{url('/show/message')}}"+"/"+contact_id,
+//         type: 'GET',
+      
+//         success: function(response) {
+//             {
+//             $('#message_pass').html(response);
+//         },
+//         error: function(xhr, status, error) {
+//             $('#message_pass').html("Error: " + xhr.status + " " + xhr.statusText);
+//         }
+            
+//         },
+//         error: function(xhr, status, error) {
+//             console.error(error);
+//         }
+//     });
+// }
+
+//     function fetchData() {
+//     $('#message_pass').empty(); // Clear the message container
+//     var contact_id = $('#contact_id').val(); // Get the contact ID
+    
+//     $.ajax({
+//         url: "{{url('/show/message')}}" + "/" + contact_id,  // Correct URL generation
+//         type: 'GET',
+//         success: function(response) {
+//             $('#message_pass').html(response);  // Update the message container
+//         },
+//         error: function(xhr, status, error) {
+//             console.error("Error: " + error);  // Log the error
+//             $('#message_pass').html("Error: " + xhr.status + " " + xhr.statusText);  // Display error message
+//         }
+//     });
+// }
+
+
+// $('#message_pass').scroll(function() {
+//                 if ($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight && !isLoading) {
+//                     fetchData();
+//                 }
+//             });
+//     fetchData();
+    // function msgcheckupdate() {
+    //     $.ajax({
+    //         url: "{{url('/count/message')}}",, // Laravel route URL
+    //         method: 'GET',
+    //         success: function(response) {
+    //             var message_count = $('#message_count').val();
+                
+                
+    //             if(message_count > response.total_message_number ){
+    //              fetchData(); 
+                  
+    //             }else{
+                 
+    //             }
+    //             console.log(response);
+    //         },
+    //         error: function(xhr, status, error) {
+    //             console.error('Error fetching data:', error);
+               
+    //         }
+    //     });
+    // }
+
+    									    <!--                                 <div class="noti__item js-item-menu">
+                                        <i class="zmdi zmdi-email"></i>
+                                        <span class="quantity">3</span>
+                                        <div class="email-dropdown js-dropdown">
+                                            <div class="email__title">
+                                                <p></p>
+                                            </div>
+
+                                            <a href="{{url('/inbox/single')}}/10">
+
+                                            <div class="email__item">
+                                                <div class="image img-cir img-40">
+                                                    <img src="images/icon/avatar-06.jpg" alt="Cynthia Harvey" />
+                                                </div>
+                                                <div class="content">
+                                                    <p>Meeting about new dashboard...</p>
+                                                    <span>Cynthia Harvey, 3 min ago</span>
+                                                </div>
+                                            </div>
+                                            </a>
+                                            
+                                            <div class="email__footer">
+                                                <a href="{{url('/inbox')}}">All Message</a>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
